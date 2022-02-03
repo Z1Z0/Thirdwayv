@@ -11,7 +11,7 @@ import UIKit
 extension UICollectionView {
     
     func registerCell<Cell: UICollectionViewCell>(cellClass: Cell.Type) {
-        self.register(Cell.self, forCellWithReuseIdentifier: String(describing: Cell.self))
+        self.register(UINib(nibName: String(describing: Cell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: Cell.self))
     }
     
     func dequeue<Cell: UICollectionViewCell>(indexPath: IndexPath) -> Cell {
