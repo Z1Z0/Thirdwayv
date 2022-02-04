@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class NetworkManager {
-    
+        
     class func request<T: Codable>(endPoint: EndPoint, completion: @escaping (Result<T, Error>) -> ()) {
         var components = URLComponents()
         components.scheme = endPoint.scheme

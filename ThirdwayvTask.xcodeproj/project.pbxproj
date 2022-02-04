@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11C366127AD597D0075F5DC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C366027AD597D0075F5DC /* Reachability.swift */; };
+		E11C366927AD7F3C0075F5DC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C366827AD7F3C0075F5DC /* CacheManager.swift */; };
+		E11C366B27AD8BD60075F5DC /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C366A27AD8BD60075F5DC /* Product+CoreDataProperties.swift */; };
 		E125691627AC0CC500D3DED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125691527AC0CC500D3DED5 /* AppDelegate.swift */; };
 		E125691827AC0CC500D3DED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125691727AC0CC500D3DED5 /* SceneDelegate.swift */; };
 		E125692027AC0CC500D3DED5 /* ThirdwayvTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E125691E27AC0CC500D3DED5 /* ThirdwayvTask.xcdatamodeld */; };
@@ -17,14 +20,22 @@
 		E125693E27AC16D500D3DED5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125693D27AC16D500D3DED5 /* NetworkManager.swift */; };
 		E125694027AC16E100D3DED5 /* ProductsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125693F27AC16E100D3DED5 /* ProductsEndPoint.swift */; };
 		E125694227AC16F400D3DED5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694127AC16F400D3DED5 /* EndPoint.swift */; };
-		E125694727AC179C00D3DED5 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694627AC179C00D3DED5 /* ProductListViewController.swift */; };
+		E125694727AC179C00D3DED5 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694627AC179C00D3DED5 /* ProductsListViewController.swift */; };
 		E125694927AC17CB00D3DED5 /* UIImageView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694827AC17CB00D3DED5 /* UIImageView + Extensions.swift */; };
 		E125694B27AC17F000D3DED5 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694A27AC17F000D3DED5 /* ProductDetailsViewController.swift */; };
 		E125695127AC18F100D3DED5 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125694F27AC18F100D3DED5 /* Product+CoreDataClass.swift */; };
-		E125695227AC18F100D3DED5 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125695027AC18F100D3DED5 /* Product+CoreDataProperties.swift */; };
+		E15F693527AC421F002CCFA0 /* ProductsListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F693327AC421F002CCFA0 /* ProductsListCollectionViewCell.swift */; };
+		E15F693627AC421F002CCFA0 /* ProductsListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15F693427AC421F002CCFA0 /* ProductsListCollectionViewCell.xib */; };
+		E15F693927AC43B1002CCFA0 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F693827AC43B1002CCFA0 /* DynamicValue.swift */; };
+		E15F693B27AC43C3002CCFA0 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F693A27AC43C3002CCFA0 /* GenericDataSource.swift */; };
+		E15F693D27AC442F002CCFA0 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F693C27AC442F002CCFA0 /* ProductsViewModel.swift */; };
+		E15F694027AC46BF002CCFA0 /* ProductsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F693F27AC46BF002CCFA0 /* ProductsListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E11C366027AD597D0075F5DC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E11C366827AD7F3C0075F5DC /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		E11C366A27AD8BD60075F5DC /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E125691227AC0CC500D3DED5 /* ThirdwayvTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdwayvTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E125691527AC0CC500D3DED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E125691727AC0CC500D3DED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +48,16 @@
 		E125693D27AC16D500D3DED5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E125693F27AC16E100D3DED5 /* ProductsEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsEndPoint.swift; sourceTree = "<group>"; };
 		E125694127AC16F400D3DED5 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
-		E125694627AC179C00D3DED5 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		E125694627AC179C00D3DED5 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		E125694827AC17CB00D3DED5 /* UIImageView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extensions.swift"; sourceTree = "<group>"; };
 		E125694A27AC17F000D3DED5 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		E125694F27AC18F100D3DED5 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E125695027AC18F100D3DED5 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E15F693327AC421F002CCFA0 /* ProductsListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E15F693427AC421F002CCFA0 /* ProductsListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsListCollectionViewCell.xib; sourceTree = "<group>"; };
+		E15F693827AC43B1002CCFA0 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		E15F693A27AC43C3002CCFA0 /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		E15F693C27AC442F002CCFA0 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		E15F693F27AC46BF002CCFA0 /* ProductsListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E11C366227AD64EF0075F5DC /* ProductsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E125694627AC179C00D3DED5 /* ProductsListViewController.swift */,
+			);
+			path = ProductsListViewController;
+			sourceTree = "<group>";
+		};
+		E11C366327AD650E0075F5DC /* ProductDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E125694A27AC17F000D3DED5 /* ProductDetailsViewController.swift */,
+			);
+			path = ProductDetailsViewController;
+			sourceTree = "<group>";
+		};
 		E125690927AC0CC500D3DED5 = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +146,9 @@
 		E125693127AC142000D3DED5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E15F693727AC438E002CCFA0 /* ViewModel */,
 				E125693227AC142900D3DED5 /* Reachability */,
+				E11C366827AD7F3C0075F5DC /* CacheManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -122,6 +156,7 @@
 		E125693227AC142900D3DED5 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				E11C366027AD597D0075F5DC /* Reachability.swift */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -166,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				E125694C27AC180E00D3DED5 /* Views */,
-				E125694E27AC186200D3DED5 /* ViewModel */,
 			);
 			path = ProductDetails;
 			sourceTree = "<group>";
@@ -211,7 +245,7 @@
 			children = (
 				E125691E27AC0CC500D3DED5 /* ThirdwayvTask.xcdatamodeld */,
 				E125694F27AC18F100D3DED5 /* Product+CoreDataClass.swift */,
-				E125695027AC18F100D3DED5 /* Product+CoreDataProperties.swift */,
+				E11C366A27AD8BD60075F5DC /* Product+CoreDataProperties.swift */,
 			);
 			path = CoreDataModels;
 			sourceTree = "<group>";
@@ -219,7 +253,9 @@
 		E125694527AC177600D3DED5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E125694627AC179C00D3DED5 /* ProductListViewController.swift */,
+				E11C366227AD64EF0075F5DC /* ProductsListViewController */,
+				E15F693227AC41F0002CCFA0 /* ProductsListCollectionViewCell */,
+				E15F693E27AC46A5002CCFA0 /* ProductsListDataSource */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,7 +263,7 @@
 		E125694C27AC180E00D3DED5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E125694A27AC17F000D3DED5 /* ProductDetailsViewController.swift */,
+				E11C366327AD650E0075F5DC /* ProductDetailsViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,15 +271,35 @@
 		E125694D27AC184B00D3DED5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E15F693C27AC442F002CCFA0 /* ProductsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		E125694E27AC186200D3DED5 /* ViewModel */ = {
+		E15F693227AC41F0002CCFA0 /* ProductsListCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E15F693327AC421F002CCFA0 /* ProductsListCollectionViewCell.swift */,
+				E15F693427AC421F002CCFA0 /* ProductsListCollectionViewCell.xib */,
+			);
+			path = ProductsListCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E15F693727AC438E002CCFA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E15F693827AC43B1002CCFA0 /* DynamicValue.swift */,
+				E15F693A27AC43C3002CCFA0 /* GenericDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E15F693E27AC46A5002CCFA0 /* ProductsListDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E15F693F27AC46BF002CCFA0 /* ProductsListDataSource.swift */,
+			);
+			path = ProductsListDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15F693627AC421F002CCFA0 /* ProductsListCollectionViewCell.xib in Resources */,
 				E125692527AC0CC700D3DED5 /* LaunchScreen.storyboard in Resources */,
 				E125692227AC0CC700D3DED5 /* Assets.xcassets in Resources */,
 			);
@@ -316,16 +373,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E125695227AC18F100D3DED5 /* Product+CoreDataProperties.swift in Sources */,
+				E15F693527AC421F002CCFA0 /* ProductsListCollectionViewCell.swift in Sources */,
+				E11C366127AD597D0075F5DC /* Reachability.swift in Sources */,
 				E125693E27AC16D500D3DED5 /* NetworkManager.swift in Sources */,
-				E125694727AC179C00D3DED5 /* ProductListViewController.swift in Sources */,
+				E125694727AC179C00D3DED5 /* ProductsListViewController.swift in Sources */,
 				E125694B27AC17F000D3DED5 /* ProductDetailsViewController.swift in Sources */,
 				E125692E27AC0DAF00D3DED5 /* UICollectionViewCell + Extension.swift in Sources */,
+				E15F694027AC46BF002CCFA0 /* ProductsListDataSource.swift in Sources */,
 				E125694227AC16F400D3DED5 /* EndPoint.swift in Sources */,
+				E15F693D27AC442F002CCFA0 /* ProductsViewModel.swift in Sources */,
+				E15F693927AC43B1002CCFA0 /* DynamicValue.swift in Sources */,
+				E11C366B27AD8BD60075F5DC /* Product+CoreDataProperties.swift in Sources */,
 				E125694927AC17CB00D3DED5 /* UIImageView + Extensions.swift in Sources */,
 				E125691627AC0CC500D3DED5 /* AppDelegate.swift in Sources */,
+				E15F693B27AC43C3002CCFA0 /* GenericDataSource.swift in Sources */,
 				E125693B27AC164900D3DED5 /* Products.swift in Sources */,
 				E125694027AC16E100D3DED5 /* ProductsEndPoint.swift in Sources */,
+				E11C366927AD7F3C0075F5DC /* CacheManager.swift in Sources */,
 				E125691827AC0CC500D3DED5 /* SceneDelegate.swift in Sources */,
 				E125692027AC0CC500D3DED5 /* ThirdwayvTask.xcdatamodeld in Sources */,
 				E125695127AC18F100D3DED5 /* Product+CoreDataClass.swift in Sources */,
@@ -471,7 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57RA7SGH3Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ThirdwayvTask/Info.plist;
+				INFOPLIST_FILE = ThirdwayvTask/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -499,7 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57RA7SGH3Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ThirdwayvTask/Info.plist;
+				INFOPLIST_FILE = ThirdwayvTask/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
