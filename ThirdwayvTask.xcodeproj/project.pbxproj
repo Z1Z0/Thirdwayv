@@ -87,6 +87,14 @@
 			path = ProductDetailsViewController;
 			sourceTree = "<group>";
 		};
+		E11C366C27AD92E30075F5DC /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				E11C366827AD7F3C0075F5DC /* CacheManager.swift */,
+			);
+			path = CacheManager;
+			sourceTree = "<group>";
+		};
 		E125690927AC0CC500D3DED5 = {
 			isa = PBXGroup;
 			children = (
@@ -146,9 +154,9 @@
 		E125693127AC142000D3DED5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E11C366C27AD92E30075F5DC /* CacheManager */,
 				E15F693727AC438E002CCFA0 /* ViewModel */,
 				E125693227AC142900D3DED5 /* Reachability */,
-				E11C366827AD7F3C0075F5DC /* CacheManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
